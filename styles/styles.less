@@ -1,6 +1,6 @@
 @search-btn-colour: #f8f8f8;
 @search-btn-colour-hover: #f0f0f0;
-@search-border-color: rgb(118, 118, 118);
+@search-border-color: #d3d3d3;
 @search-border-color-hover: #c6c6c6;
 
 *, *::before, *::after {
@@ -62,7 +62,6 @@ button {
 .logo-btn {
     padding: 16px;
     border: none;
-    // background: none;
 }
 
 .logo-btn img {
@@ -102,7 +101,10 @@ button {
     width: 64px;
     padding: 1px 6px;
     border-radius: 0 2px 2px 0;
-    border: 1px solid @search-border-color;
+    border-left: none;
+    border-right: 1px solid @search-border-color;
+    border-top: 1px solid @search-border-color;
+    border-bottom: 1px solid @search-border-color;
 }
 
 .search-btn:hover {
