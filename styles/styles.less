@@ -6,7 +6,9 @@
 *, *::before, *::after {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
     font-size: inherit;
     font-family: 'Roboto';
     color: #fff;
@@ -27,6 +29,12 @@ button {
 
 .opacity-btn {
     opacity: 0.7;
+}
+
+// ===== CONTENT =====
+
+.content {
+    height: 100vh;
 }
 
 // ===== HEADER =====
@@ -207,4 +215,41 @@ button {
     color: white;
     font-size: 20px;
     font-weight: 600;
+}
+
+// ===== MAIN =====
+.main {
+    height: 100%;
+    display: flex;
+    flex-shrink: 0;
+}
+
+// ===== PRIMARY =====
+.primary {
+    box-sizing:content-box;
+    height: 100%;
+    flex-grow: 1;
+    padding: 24px 24px 0 0;
+    margin-left: 24px;
+    background: cyan;
+}
+
+.video-wrapper {
+    width: 100%;
+    /* falls back to 16/9, but otherwise uses ratio from HTML */
+    padding-bottom: calc(var(--aspect-ratio, .5625) * 100%); 
+  }
+
+.video-wrapper iframe {
+    width: 100%;
+}
+
+// ===== SECONDARY =====
+.secondary {
+    box-sizing:content-box;
+    height: 100%;
+    width: 402px;
+    min-width: 300px;
+    padding: 24px 24px 0 0 ;
+    background-color: darkkhaki ;
 }
