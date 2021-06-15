@@ -11,12 +11,7 @@
     box-sizing: border-box;         /* Opera/IE 8+ */
     font-size: inherit;
     font-family: 'Roboto';
-    color: #fff;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
+    color: #030303;
 }
 
 button {
@@ -35,6 +30,9 @@ button {
 
 .content {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 // ===== HEADER =====
@@ -226,16 +224,20 @@ button {
 .main {
     padding-top: 56px;
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    flex-shrink: 0;
+    min-width: calc(480px * (16/9) + (3 * 24px) + 300px);
+    max-width: calc(1280px + 402px + (3 * 24px));
+    // flex-shrink: 0;
 }
 
 // ===== PRIMARY =====
 .primary {
-    box-sizing:content-box;
+    box-sizing: content-box;
     height: 100%;
-    max-width: 955px;
+    min-width: calc(480px * (16/9));
+    max-width: calc((100vh - (56px + 24px + 136px)) * (16/9));
     flex-grow: 1;
     padding: 24px 24px 0 0;
     margin-left: 24px;
@@ -259,12 +261,22 @@ button {
     height: 100%;
 }
 
+// ===== VIDEO METADATA =====
+.video-metadata {
+    padding: 20px 0 8px 0;
+}
+
+.video-metadata .video-title {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
 // ===== SECONDARY =====
 .secondary {
-    box-sizing:content-box;
+    box-sizing: content-box;
     height: 100%;
     width: 402px;
     min-width: 300px;
-    padding: 24px 24px 0 0 ;
+    padding: 24px 24px 0 0;
     background-color: darkkhaki ;
 }
