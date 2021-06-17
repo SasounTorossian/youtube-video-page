@@ -277,13 +277,53 @@ button {
 
 // ===== VIDEO METADATA =====
 .video-metadata {
+    box-sizing: content-box;
+    background-color: cadetblue;
+    min-width: calc(480px * (16/9));
+    max-width: calc((100vh - (56px + 24px + 136px)) * (16/9));
+    height: 66px;
+    flex-grow: 1;
     padding: 20px 0 8px 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.video-metadata .video-title {
+.video-metadata-top {
+    //
+}
+
+.video-metadata-top .video-title {
     font-weight: 500;
     font-size: 1.3rem;
 }
+
+.video-metadata-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.video-metadata-bottom .video-metadata-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.video-metadata-bottom .video-metadata-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.video-metadata-bottom .video-options {
+    display: flex;
+    flex-direction: row;
+}
+
+.video-metadata-bottom .option-btn {
+    display: flex;
+    flex-direction: row;
+}
+
+
 
 // ===== SECONDARY =====
 .secondary {
