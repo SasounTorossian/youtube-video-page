@@ -115,11 +115,6 @@ button {
     border: 1px solid @search-border-color;
 }
 
-.search-input::placeholder {
-    font-family:"Roboto";
-    font-weight: 600;
-}
-
 .search-btn {
     background-color: @search-btn-colour;
     height: 32px;
@@ -334,23 +329,43 @@ button {
 .video-data-bottom .video-options {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .video-data-bottom .option-btn {
+    // box-sizing: content-box;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
+    height: 40px;
+    border: none;
+    text-transform: uppercase;
+    padding-right: 6px;
+}
+
+.video-data-bottom .option-btn p {
+    line-height: 40px; // Better solution?
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.5px;
-    padding-right: 6px;
-    text-transform: uppercase;
+}
+
+.video-data-bottom .video-data-right .option-btn-margin {
+    margin-left: 8px;
+}
+
+.video-data-bottom .video-menu {
+    border: none;
+    height: 40px;
+    width: 40px;
 }
 
 .video-data-bottom .info-img {
+    box-sizing: content-box;
     height: 24px;
     width: 24px;
+    padding: 6px;
 }
 
 
