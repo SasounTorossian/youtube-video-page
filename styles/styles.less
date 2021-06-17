@@ -3,6 +3,7 @@
 @search-border-color: #d3d3d3;
 @search-border-color-hover: #c6c6c6;
 @grey-text: rgb(96, 96, 96);
+@grey-icon: rgb(144, 144, 144);
 
 *, *::before, *::after {
     padding: 0;
@@ -341,7 +342,7 @@ button {
     border: none;
     text-transform: uppercase;
     padding-right: 6px;
-    background-color: aqua;
+    background: none;
 }
 
 .video-data-bottom .option-btn p {
@@ -349,6 +350,7 @@ button {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.5px;
+    color: @grey-text;
 }
 
 .video-data-bottom .video-data-right .option-btn-margin {
@@ -362,6 +364,17 @@ button {
     align-items: center;
     height: 40px;
     width: 40px;
+    background: none;
+}
+
+.video-data-bottom .video-menu img{
+    height: 24px;
+    width: 24px;
+    opacity: 0.4;
+}
+
+.video-data-bottom .video-menu:hover > img{
+    opacity: 0.6;
 }
 
 .video-data-bottom .info-img {
@@ -369,8 +382,8 @@ button {
     height: 24px;
     width: 24px;
     padding: 6px;
+    opacity: 0.4;
 }
-
 
 
 // ===== SECONDARY =====
