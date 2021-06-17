@@ -2,6 +2,7 @@
 @search-btn-colour-hover: #f0f0f0;
 @search-border-color: #d3d3d3;
 @search-border-color-hover: #c6c6c6;
+@grey-text: rgb(96, 96, 96);
 
 *, *::before, *::after {
     padding: 0;
@@ -82,7 +83,7 @@ button {
 
 .region-text {
     font-size: 10px;
-    color: rgb(96, 96, 96);
+    color: @grey-text;
     margin-left: -10px;
     margin-top: 12px;
     height: 44px
@@ -275,10 +276,10 @@ button {
     height: 100%;
 }
 
-// ===== VIDEO data =====
+// ===== VIDEO DATA =====
 .video-data {
     box-sizing: content-box;
-    background-color: cadetblue;
+    background-color: white;
     min-width: calc(480px * (16/9));
     max-width: calc((100vh - (56px + 24px + 136px)) * (16/9));
     height: 66px;
@@ -286,6 +287,8 @@ button {
     padding: 20px 0 8px 0;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
 }
 
 .video-data-top {
@@ -293,19 +296,34 @@ button {
 }
 
 .video-data-top .video-title {
-    font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
 }
 
 .video-data-bottom {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    height: 40px;
 }
 
 .video-data-bottom .video-data-left {
     display: flex;
     flex-direction: row;
+}
+
+.video-data-bottom .video-data-left .video-info {
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: @grey-text;
+}
+
+.video-data-bottom .video-data-left .dot {
+    margin: 0 4px;
 }
 
 .video-data-bottom .video-data-right {
@@ -321,6 +339,18 @@ button {
 .video-data-bottom .option-btn {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding-right: 6px;
+    text-transform: uppercase;
+}
+
+.video-data-bottom .info-img {
+    height: 24px;
+    width: 24px;
 }
 
 
