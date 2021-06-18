@@ -401,11 +401,11 @@ button {
 
 // ===== CHANNEL INFO =====
 .channel-info {
-    background: salmon;
+    background: white;
     display: flex;
     flex-direction: column;
     padding-bottom: 16px;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 24px;
 }
 
@@ -533,6 +533,46 @@ button {
     line-height: 20px;
     color: #606060;
 }
+
+// ===== COMMENTS =====
+.comment-header .comment-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.comment-header .comment-info .comment-number {
+    margin-right: 32px;
+}
+
+.comment-header .comment-info .comment-number p{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 22px;
+}
+
+.comment-header .comment-info .comment-sort {
+    display: flex;
+    flex-direction: row;
+}
+
+.comment-header .comment-info .comment-sort img {
+    height: 24px;
+    width: 24px;
+    opacity: 0.4;
+    margin-right: 8px;
+}
+
+.comment-header .comment-info .comment-sort p {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+    color: #606060;
+}
+
 
 // ===== SECONDARY =====
 .secondary {
