@@ -418,7 +418,6 @@ button {
 .channel-info-left {
     display: flex;
     flex-direction: row;
-    align-content: center;
 }
 
 .channel-info .channel-info-row-1 .channel-icon{
@@ -471,7 +470,41 @@ button {
 .channel-info-right {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
+
+.channel-info-right .subscribe-btn {
+    height: 37px;
+    font-size: 14px;
+    padding: 10px 16px;
+    margin: 1.5px 4px;
+    border: none;
+    border-radius: 2px;
+}
+
+.channel-info-right .subscribe-btn p{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: @grey-text;
+}
+
+.channel-info-right .bell-btn {
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+    border: none;
+    border-radius: 2px;
+    background: none;
+}
+
+
+.channel-info-right .bell-btn img {
+    height: 24px;
+    width: 24px;
+    opacity: 0.4;
+}
+
 
 
 // ===== SECONDARY =====
