@@ -401,7 +401,76 @@ button {
 
 // ===== CHANNEL INFO =====
 .channel-info {
-    background: white;
+    background: salmon;
+    display: flex;
+    flex-direction: column;
+}
+
+// ===== CHANNEL INFO ROW 1 =====
+.channel-info .channel-info-row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 16px;
+    margin-bottom: 12px;
+}
+
+.channel-info-left {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.channel-info .channel-info-row-1 .channel-icon{
+    height: 51px;
+    width: 64px;
+}
+
+.channel-info .channel-info-row-1 .channel-icon img{
+    height: 48px;
+    width: 48px;
+}
+
+.channel-info .channel-name-subs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.channel-name-ver {
+    display: flex;
+    flex-direction: row;
+}
+
+.channel-name-ver .channel-name {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+}
+
+.channel-name-ver .channel-verify {
+    padding-left: 4px;
+}
+
+.channel-name-ver .channel-verify-img {
+    height: 14px;
+    width: 14px;
+}
+
+
+.channel-info .channel-name-subs .channel-subs{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+    margin-right: 4px;
+    color: @grey-text;
+}
+
+.channel-info-right {
+    display: flex;
+    flex-direction: row;
 }
 
 
