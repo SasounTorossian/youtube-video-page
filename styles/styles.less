@@ -542,7 +542,7 @@ button {
 .comment-info-header {
     display: flex;
     flex-direction: column;
-    margin: 24px 0;
+    margin: 24px 0 32px 0;
 }
 
 .comment-info-header .comment-info {
@@ -612,6 +612,151 @@ button {
     letter-spacing: 0.2px;
     line-height: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+// ===== COMMENT =====
+.comment {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+.comment .commenter-icon {
+    margin-right: 16px;
+}
+
+.comment .commenter-icon img {
+    height: 40px;
+    width: 40px;
+}
+
+.comment .commenter-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment .commenter-content .commenter-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.comment .commenter-content .commenter-header .commenter-name-ver {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2px;
+    padding-right: 4px; //!!!!
+}
+
+.comment .commenter-content .commenter-header .commenter-name {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.comment .commenter-content .commenter-header .commenter-verify {
+    margin-bottom: 1px;
+    margin-left: 4px;
+}
+
+.comment .commenter-content .commenter-header .commenter-verify img{
+    height: 13px;
+    width: 13px;
+    opacity: 0.6;
+}
+.comment .commenter-content .commenter-header .commenter-date {
+    color: @grey-text;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+}
+
+.comment .commenter-content .commenter-text {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+}
+
+.comment .commenter-content .commenter-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4px;
+    height: 36px;
+}
+
+.comment .commenter-content .commenter-options .commenter-thumbs-up {
+    box-sizing: content-box;
+    height: 16px;
+    width: 16px;
+    padding: 8px 8px 8px 0;
+}
+
+.comment .commenter-content .commenter-options .commenter-thumbs-up img {
+    height: 16px;
+    width: 16px;
+    opacity: 0.4;
+}
+
+.comment .commenter-content .commenter-options .commenter-thumbs-up-count {
+    color: @grey-text;
+    margin-right: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+}
+
+.comment .commenter-content .commenter-options .commenter-thumbs-down {
+    box-sizing: content-box;
+    height: 16px;
+    width: 16px;
+    padding: 8px;
+}
+
+.comment .commenter-content .commenter-options .commenter-thumbs-down img {
+    height: 16px;
+    width: 16px;
+    opacity: 0.4;
+} 
+
+.comment .commenter-content .commenter-options .commenter-reply {
+    color: @grey-text;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.007px;
+}
+
+.comment .commenter-content .commenter-replies {
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    height: 32px;
+}
+
+.comment .commenter-content .commenter-replies .commenter-replies-arrow {
+    height: 20px;
+    width: 20px;
+    padding: 0;
+}
+
+.comment .commenter-content .commenter-replies .commenter-replies-arrow object{
+    height: 20px;
+    width: 20px;
+    color: blue;
+}
+
+.comment .commenter-content .commenter-replies .commenter-replies-text {
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 20px;
 }
 
 
