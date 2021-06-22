@@ -621,6 +621,7 @@ button {
     display: flex;
     flex-direction: row;
     margin-bottom: 16px;
+    background: white;
 }
 
 .comment .commenter-icon {
@@ -734,31 +735,35 @@ button {
     letter-spacing: 0.007px;
 }
 
-.comment .commenter-content .commenter-replies {
+.comment .commenter-replies {
     display: flex;
     flex-direction: row ;
     align-items: center;
     height: 32px;
 }
 
-.comment .commenter-content .commenter-replies .commenter-replies-arrow {
+.comment .commenter-replies .commenter-replies-arrow {
     height: 20px;
     width: 20px;
     padding: 0;
 }
 
-.comment .commenter-content .commenter-replies .commenter-replies-arrow object{
+.comment .commenter-replies .commenter-replies-arrow object{
     height: 20px;
     width: 20px;
-    color: blue;
 }
 
-.comment .commenter-content .commenter-replies .commenter-replies-text {
+.deep-blue {
+    filter: invert(24%) sepia(44%) saturate(5753%) hue-rotate(207deg) brightness(89%) contrast(95%);
+}
+
+.comment .commenter-replies .commenter-replies-text {
     margin-left: 8px;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.5px;
     line-height: 20px;
+    color: #065fd4;
 }
 
 
