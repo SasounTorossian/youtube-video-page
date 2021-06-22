@@ -11,199 +11,197 @@
     <title>Youtube</title>
 </head>
 <body>
-    <div class="content">
-        <header class="header">
-            <div class="header-left">
-                <button class="menu-btn transparent-btn opacity-btn">
-                    <img src="./assets/images/menu.svg" alt="menu-button">
+    <header class="header">
+        <div class="header-left">
+            <button class="menu-btn transparent-btn opacity-btn">
+                <img src="./assets/images/menu.svg" alt="menu-button">
+            </button>
+            <button class="logo-btn transparent-btn">
+                <img src="./assets/images/yt_logo_rgb_light.png" height=30px alt="logo-button">
+            </button>
+            <span class="region-text">GB</span>
+        </div>
+        <div class="header-center">
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search"/>
+                <button class="search-btn">
+                    <img src="./assets/images/magnify.svg" alt="magnifying glass">
                 </button>
-                <button class="logo-btn transparent-btn">
-                    <img src="./assets/images/yt_logo_rgb_light.png" height=30px alt="logo-button">
-                </button>
-                <span class="region-text">GB</span>
             </div>
-            <div class="header-center">
-                <div class="search-bar">
-                    <input type="text" class="search-input" placeholder="Search"/>
-                    <button class="search-btn">
-                        <img src="./assets/images/magnify.svg" alt="magnifying glass">
-                    </button>
+            <button class="search-mic-btn transparent-btn opacity-btn">
+                <img src="./assets/images/microphone.svg" alt="microphone">
+            </button>
+        </div>
+        <div class="header-right">
+            <button class="create-btn transparent-btn opacity-btn">
+                <img src="./assets/images/video-plus.svg" alt="video-outline">
+            </button>
+            <button class="youtube-apps-btn transparent-btn opacity-btn">
+                <img src="./assets/images/apps.svg" alt="apps">
+            </button>
+            <button class="notifications-btn transparent-btn opacity-btn">
+                <img src="./assets/images/bell.svg" alt="bell">
+            </button>
+            <div class="profile-div">
+                <button class="profile-btn">
+                    <span class="profile-circle">S</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="primary">
+            <div class="video">
+                <div class="video-wrapper" style="--aspect-ratio: 3 / 4;">
+                    <iframe  src="https://www.youtube.com/embed/rLkVFjRyoDU" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <button class="search-mic-btn transparent-btn opacity-btn">
-                    <img src="./assets/images/microphone.svg" alt="microphone">
-                </button>
-            </div>
-            <div class="header-right">
-                <button class="create-btn transparent-btn opacity-btn">
-                    <img src="./assets/images/video-plus.svg" alt="video-outline">
-                </button>
-                <button class="youtube-apps-btn transparent-btn opacity-btn">
-                    <img src="./assets/images/apps.svg" alt="apps">
-                </button>
-                <button class="notifications-btn transparent-btn opacity-btn">
-                    <img src="./assets/images/bell.svg" alt="bell">
-                </button>
-                <div class="profile-div">
-                    <button class="profile-btn">
-                        <span class="profile-circle">S</span>
-                    </button>
-                </div>
-            </div>
-        </header>
-        <main class="main">
-            <div class="primary">
-                <div class="video">
-                    <div class="video-wrapper" style="--aspect-ratio: 3 / 4;">
-                        <iframe  src="https://www.youtube.com/embed/rLkVFjRyoDU" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="video-info">
-                        <div class="video-data">
-                            <div class="video-data-top">
-                                <h3 class="video-title">The best projects from 10 years of Applied Science</h3>
+                <div class="video-info">
+                    <div class="video-data">
+                        <div class="video-data-top">
+                            <h3 class="video-title">The best projects from 10 years of Applied Science</h3>
+                        </div>
+                        <div class="video-data-bottom">
+                            <div class="video-data-left">
+                                <div class="count video-info">84,371 views</div>
+                                <span class="dot video-info">•</span>
+                                <div class="date video-info">May 8, 2021</div>
                             </div>
-                            <div class="video-data-bottom">
-                                <div class="video-data-left">
-                                    <div class="count video-info">84,371 views</div>
-                                    <span class="dot video-info">•</span>
-                                    <div class="date video-info">May 8, 2021</div>
-                                </div>
-                                <div class="video-data-right">
-                                    <div class="video-options">
-                                        <button class="upvote option-btn">
-                                            <img class="info-img" src="./assets/images/thumb-up.svg" alt="thumbs up">
-                                            <p>11K</p>
-                                        </button>
-                                        <button class="downvote option-btn">
-                                            <img class="info-img" src="./assets/images/thumb-down.svg" alt="thumbs down">
-                                            <p>32</p>
-                                        </button>
-                                        <button class="share option-btn option-btn-margin">
-                                            <img class="info-img" src="./assets/images/share.svg" alt="share">
-                                            <p>SHARE</p>
-                                        </button>
-                                        <button class="save option-btn option-btn-margin">
-                                            <img class="info-img" src="./assets/images/playlist-plus.svg" alt="playlist plus">
-                                            <p>SAVE</p>
-                                        </button>
-                                    </div>
-                                    <button class="video-menu option-btn-margin">
-                                        <img class="info-img" src="./assets/images/dots-horizontal.svg" alt="dots-horizontal">
+                            <div class="video-data-right">
+                                <div class="video-options">
+                                    <button class="upvote option-btn">
+                                        <img class="info-img" src="./assets/images/thumb-up.svg" alt="thumbs up">
+                                        <p>11K</p>
+                                    </button>
+                                    <button class="downvote option-btn">
+                                        <img class="info-img" src="./assets/images/thumb-down.svg" alt="thumbs down">
+                                        <p>32</p>
+                                    </button>
+                                    <button class="share option-btn option-btn-margin">
+                                        <img class="info-img" src="./assets/images/share.svg" alt="share">
+                                        <p>SHARE</p>
+                                    </button>
+                                    <button class="save option-btn option-btn-margin">
+                                        <img class="info-img" src="./assets/images/playlist-plus.svg" alt="playlist plus">
+                                        <p>SAVE</p>
                                     </button>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="channel-info">
-                        <div class="channel-info-row-1">
-                            <div class="channel-info-left">
-                                <div class="channel-icon">
-                                    <img class="channel-icon-img" src="./assets/images/Applied_Science_Logo.jpg">
-                                </div>
-                                <div class="channel-name-subs">
-                                    <div class="channel-name-ver">
-                                        <div class="channel-name">Applied Science</div>
-                                        <div class="channel-verify">
-                                            <img class="channel-verify-img" src="./assets/images/checkbox-marked-circle.svg">
-                                        </div>
-                                    </div>
-                                    <div class="channel-subs">726K subscribers</div>
-                                </div>
-                            </div>
-                            <div class="channel-info-right">
-                                <button class="subscribe-btn">
-                                    <p>SUBSCRIBED</p>
-                                </button> 
-                                <button class="bell-btn">
-                                    <img class="bell-img" src="assets/images/bell-outline.svg">
+                                <button class="video-menu option-btn-margin">
+                                    <img class="info-img" src="./assets/images/dots-horizontal.svg" alt="dots-horizontal">
                                 </button>
                             </div>
                         </div>
-                        <div class="channel-info-row-2">
-                            <div class="channel-video-descriptor">
-                                <p>
-                                    It's been a very fun 10 years, and there's more to come! Ask your questions in the comments (as always).
-                                </p>
+                    </div>
+                </div>
+                <div class="channel-info">
+                    <div class="channel-info-row-1">
+                        <div class="channel-info-left">
+                            <div class="channel-icon">
+                                <img class="channel-icon-img" src="./assets/images/Applied_Science_Logo.jpg">
+                            </div>
+                            <div class="channel-name-subs">
+                                <div class="channel-name-ver">
+                                    <div class="channel-name">Applied Science</div>
+                                    <div class="channel-verify">
+                                        <img class="channel-verify-img" src="./assets/images/checkbox-marked-circle.svg">
+                                    </div>
+                                </div>
+                                <div class="channel-subs">726K subscribers</div>
                             </div>
                         </div>
-                        <div class="channel-info-row-3">
-                            <div class="channel-show-more">
-                                <p>
-                                    SHOW MORE
-                                </p>
-                            </div>
+                        <div class="channel-info-right">
+                            <button class="subscribe-btn">
+                                <p>SUBSCRIBED</p>
+                            </button> 
+                            <button class="bell-btn">
+                                <img class="bell-img" src="assets/images/bell-outline.svg">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="channel-info-row-2">
+                        <div class="channel-video-descriptor">
+                            <p>
+                                It's been a very fun 10 years, and there's more to come! Ask your questions in the comments (as always).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="channel-info-row-3">
+                        <div class="channel-show-more">
+                            <p>
+                                SHOW MORE
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="comments">
-                    <div class="comment-info-header">
-                        <div class="comment-info">
-                            <div class="comment-number">
-                                <p>684 Comments</p>
-                            </div>
-                            <div class="comment-sort">
-                                <img src="assets/images/sort-variant.svg">
-                                <p>SORT BY</p>
-                            </div>
+            </div>
+            <div class="comments">
+                <div class="comment-info-header">
+                    <div class="comment-info">
+                        <div class="comment-number">
+                            <p>684 Comments</p>
                         </div>
-                        <div class="comment-user">
-                            <span class="user-symbol">S</span>
-                            <input class="user-input" type="text" placeholder="Add a public comment...">
+                        <div class="comment-sort">
+                            <img src="assets/images/sort-variant.svg">
+                            <p>SORT BY</p>
                         </div>
                     </div>
-                    <div class="comment-section">
-                        <div class="comment">
-                            <div class="commenter-icon">
-                                <img src="/assets/images/commenter-icon-1.jpg" alt="commenter icon">
-                            </div>
-                            <div class="commenter-content">
-                                <div class="commenter-header">
-                                    <div class="commenter-name-ver">
-                                        <div class="commenter-name">Practical Engineering</div>
-                                        <div class="commenter-verify">
-                                            <img src="/assets/images/check.svg" alt="check">
-                                        </div>
-                                    </div>
-                                    <div class="commenter-date">1 month ago</div>
-                                </div>
-                                <div class="commenter-text">
-                                    Congrats on 10 years Ben. Yours is one of the first channels that inspired me to make some videos of my own (not to mention the book deal). And I won't feign that my channel's generic-sounding name and orange insignia aren't just a little bit derivative. Here's to 10 more!
-                                </div>
-                                <div class="commenter-options">
-                                    <div class="commenter-thumbs-up">
-                                        <img src="/assets/images/thumb-up.svg" alt="thumbs up">
-                                    </div>
-                                    <div class="commenter-thumbs-up-count">926</div>
-                                    <div class="commenter-thumbs-down">
-                                        <img src="/assets/images/thumb-down.svg" alt="thumbs down">
-                                    </div>
-                                    <div class="commenter-reply">REPLY</div>
-                                </div>
-                                <div class="commenter-replies">
-                                    <div class="commenter-replies-arrow">
-                                        <object type="image/svg+xml" data="/assets/images/menu-down.svg">
-                                            menu
-                                        </object>
-                                    </div>
-                                    <div class="commenter-replies-text">View 17 replies</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>A</div>
-                        <div>A</div>
-                        <div>A</div>
-                        <div>A</div>
-                        <div>A</div>
-                        <div>A</div>
-                        <div>A</div>
-                        <div>A</div>
+                    <div class="comment-user">
+                        <span class="user-symbol">S</span>
+                        <input class="user-input" type="text" placeholder="Add a public comment...">
                     </div>
                 </div>
+                <div class="comment-section">
+                    <div class="comment">
+                        <div class="commenter-icon">
+                            <img src="/assets/images/commenter-icon-1.jpg" alt="commenter icon">
+                        </div>
+                        <div class="commenter-content">
+                            <div class="commenter-header">
+                                <div class="commenter-name-ver">
+                                    <div class="commenter-name">Practical Engineering</div>
+                                    <div class="commenter-verify">
+                                        <img src="/assets/images/check.svg" alt="check">
+                                    </div>
+                                </div>
+                                <div class="commenter-date">1 month ago</div>
+                            </div>
+                            <div class="commenter-text">
+                                Congrats on 10 years Ben. Yours is one of the first channels that inspired me to make some videos of my own (not to mention the book deal). And I won't feign that my channel's generic-sounding name and orange insignia aren't just a little bit derivative. Here's to 10 more!
+                            </div>
+                            <div class="commenter-options">
+                                <div class="commenter-thumbs-up">
+                                    <img src="/assets/images/thumb-up.svg" alt="thumbs up">
+                                </div>
+                                <div class="commenter-thumbs-up-count">926</div>
+                                <div class="commenter-thumbs-down">
+                                    <img src="/assets/images/thumb-down.svg" alt="thumbs down">
+                                </div>
+                                <div class="commenter-reply">REPLY</div>
+                            </div>
+                            <div class="commenter-replies">
+                                <div class="commenter-replies-arrow">
+                                    <object type="image/svg+xml" data="/assets/images/menu-down.svg">
+                                        menu
+                                    </object>
+                                </div>
+                                <div class="commenter-replies-text">View 17 replies</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>A</div>
+                    <div>A</div>
+                    <div>A</div>
+                    <div>A</div>
+                    <div>A</div>
+                    <div>A</div>
+                    <div>A</div>
+                    <div>A</div>
+                </div>
             </div>
-            <div class="secondary">
-                <div class="tags"></div>
-                <div class="suggestions"></div>
-            </div>
-        </main>
-    </div>
+        </div>
+        <div class="secondary">
+            <div class="tags"></div>
+            <div class="suggestions"></div>
+        </div>
+    </main>
 </body>
 </html>

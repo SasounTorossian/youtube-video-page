@@ -236,22 +236,22 @@ button {
     padding-top: 56px;
     height: 100%;
     width: 100%;
+    margin: auto;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     min-width: calc(480px * (16/9) + (3 * 24px) + 300px);
     max-width: calc(1280px + 402px + (3 * 24px));
-    // flex-shrink: 0;
 }
 
 // ===== PRIMARY =====
 .primary {
     box-sizing: content-box;
     height: 100%;
+    width: 100%;
     min-width: calc(480px * (16/9));
     max-width: calc((100vh - (56px + 24px + 136px)) * (16/9));
-    flex-grow: 1;
     padding: 24px 24px 0 0;
-    margin-left: 24px;
+    margin: 0 0 0 24px;
     background: cyan;
 }
 
@@ -769,4 +769,6 @@ button {
     min-width: 300px;
     padding: 24px 24px 0 0;
     background-color: darkkhaki ;
+    flex-shrink: 0;
+    overflow: auto;
 }
