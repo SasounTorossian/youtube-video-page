@@ -1,3 +1,4 @@
+@background-colour: rgb(249, 249, 249);
 @search-btn-colour: #f8f8f8;
 @search-btn-colour-hover: #f0f0f0;
 @search-border-color: #d3d3d3;
@@ -14,6 +15,10 @@
     font-size: inherit;
     font-family: 'Roboto';
     color: #030303;
+}
+
+body {
+    background-color: @background-colour;
 }
 
 button {
@@ -253,7 +258,7 @@ button {
     max-width: calc((100vh - (56px + 24px + 136px)) * (16/9));
     padding: 24px 24px 0 0;
     margin: 0 0 0 24px;
-    background: cyan;
+    background: transparent;
 }
 
 .video-wrapper {
@@ -276,7 +281,7 @@ button {
 // ===== VIDEO DATA =====
 .video-data {
     box-sizing: content-box;
-    background-color: white;
+    background-color: transparent;
     min-width: calc(480px * (16/9));
     max-width: calc((100vh - (56px + 24px + 136px)) * (16/9));
     height: 66px;
@@ -403,7 +408,7 @@ button {
 
 // ===== CHANNEL INFO =====
 .channel-info {
-    background: white;
+    background: transparent;
     display: flex;
     flex-direction: column;
     padding-bottom: 16px;
@@ -614,6 +619,7 @@ button {
     letter-spacing: 0.2px;
     line-height: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
 }
 
 // ===== COMMENT =====
@@ -621,7 +627,7 @@ button {
     display: flex;
     flex-direction: row;
     margin-bottom: 16px;
-    background: white;
+    background: transparent;
 }
 
 .comment .commenter-icon {
@@ -777,7 +783,7 @@ button {
     width: 402px;
     min-width: 300px;
     padding: 24px 24px 0 0;
-    background-color: darkkhaki ;
+    background-color: cyan;
     flex-shrink: 0;
     overflow: auto;
 }
