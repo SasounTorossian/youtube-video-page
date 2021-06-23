@@ -785,27 +785,18 @@ button {
     padding: 24px 24px 0 0;
     background-color: cyan;
     flex-shrink: 0;
-    overflow: auto;
+    // overflow: auto;
     display: flex;
     flex-direction: column;
 }
 
 // ===== TAGS =====
 
-// .tags {
-//     display: inline-block;
-//     padding-right: auto;
-//     // flex-direction: row;
-//     // align-items: flex-start;
-//     // height: 51px;
-// }
-
-
 .tags {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    height: 51px;
+    height: 43px;
 }
 
 .tag {
@@ -853,4 +844,96 @@ button {
     width: 16px;
 }
 
-// ===== SUGGESTIONS =====
+// ===== RECCOMENDATION =====
+.recommendation-container {
+    display: flex;
+    flex-direction: row;
+    width: 402px;
+    height: 94px;
+    margin-top: 8px;
+    background-color: red;
+}
+
+.recommendation-thumbnail {
+    margin-right: 8px;
+    width: 168px;
+    position: relative;
+}
+
+.recommendation-thumbnail .thumbnail-img {
+    height: 94px;
+}
+
+.recommendation-thumbnail img {
+    width: 168px;
+    height: 94px;
+}
+
+.recommendation-thumbnail .static {
+    position: absolute;
+}
+
+.recommendation-thumbnail .static:hover {
+    opacity: 0;
+}
+
+.recommendation-thumbnail .static:hover ~ .duration {
+    opacity: 0;
+}
+
+.recommendation-thumbnail .static:hover ~ .thumbail-img-overlay .img-overlay {
+    opacity: 1;
+}
+
+
+
+.recommendation-thumbnail .duration {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 68px;
+    border-radius: 2px;
+    margin: 4px;
+    padding: 3px 4px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.28s ease-out;
+}
+
+.recommendation-thumbnail .img-overlay {
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    height: 28px;
+    width: 28px;
+    margin: 4px;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.recommendation-thumbnail .img-overlay img {
+    height: 20px;
+    width: 20px;
+}
+
+.recommendation-thumbnail .watch-later {
+    top: 0;
+}
+
+.recommendation-thumbnail .add-queue {
+    top: 32px;
+}
+
+.recommendation-thumbnail .duration p {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.35px;
+    line-height: 12px;
+    max-height: 12px;
+    color: rgb(255, 255, 255);
+}
