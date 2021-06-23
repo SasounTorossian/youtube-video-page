@@ -786,4 +786,44 @@ button {
     background-color: cyan;
     flex-shrink: 0;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.tag {
+    display: inline-flex;
+    box-sizing: content-box;
+    height: 30px;
+    line-height: 20px;
+    min-width: 12px;
+    padding: 0 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    margin: 8px 8px 8px 0;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: rgb(3, 3, 3);
+}
+
+.tag-all {
+    background-color: rgb(80, 80, 80);
+    color: rgb(255, 255, 255);
+}
+
+.tag-all p {
+    color: rgb(255, 255, 255);
+}
+
+.tag p{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    max-width: 200px;
 }
