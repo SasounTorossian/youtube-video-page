@@ -783,9 +783,8 @@ button {
     width: 402px;
     min-width: 300px;
     padding: 24px 24px 0 0;
-    background-color: cyan;
+    background-color: transparent;
     flex-shrink: 0;
-    // overflow: auto;
     display: flex;
     flex-direction: column;
 }
@@ -844,16 +843,33 @@ button {
     width: 16px;
 }
 
-// ===== RECCOMENDATION =====
+// ===== RECOMMENDATION =====
 .recommendation-container {
     display: flex;
     flex-direction: row;
     width: 402px;
     height: 94px;
     margin-top: 8px;
-    background-color: red;
+    background-color: transparent;
 }
 
+.recommendation-container:hover .static {
+    opacity: 0;
+}
+
+.recommendation-container:hover .static ~ .duration {
+    opacity: 0;
+}
+
+.recommendation-container:hover .static ~ .thumbail-img-overlay .img-overlay {
+    opacity: 1;
+}
+
+.recommendation-container:hover .recommendation-menu {
+    opacity: 1;
+}
+
+// ===== RECOMMENDATION THUMBNAIL =====
 .recommendation-thumbnail {
     margin-right: 8px;
     width: 168px;
@@ -872,20 +888,6 @@ button {
 .recommendation-thumbnail .static {
     position: absolute;
 }
-
-.recommendation-thumbnail .static:hover {
-    opacity: 0;
-}
-
-.recommendation-thumbnail .static:hover ~ .duration {
-    opacity: 0;
-}
-
-.recommendation-thumbnail .static:hover ~ .thumbail-img-overlay .img-overlay {
-    opacity: 1;
-}
-
-
 
 .recommendation-thumbnail .duration {
     display: flex;
@@ -936,4 +938,95 @@ button {
     line-height: 12px;
     max-height: 12px;
     color: rgb(255, 255, 255);
+}
+
+// ===== RECOMMENDATION INFO =====
+.recommendation-info {
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  }
+
+
+  // ===== RECOMMENDATION INFO TITLE =====
+.recommendation-info .recommendation-title {
+    margin-bottom: 4px;
+}
+
+.recommendation-info .recommendation-title p {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+}
+
+// ===== RECOMMENDATION INFO CHANNEL VER=====
+
+.recommendation-info .recommendation-channel-ver {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.recommendation-info .recommendation-channel-ver p {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+    color: @grey-text
+}
+
+.recommendation-info .recommendation-channel-ver img {
+    box-sizing: content-box;
+    height: 13px;
+    width: 13px;
+    opacity: 0.6;
+    margin: 0 0 1px 0;
+    padding-left: 4px;
+}
+
+// ===== RECOMMENDATION INFO VID INFO =====
+.recommendation-info .recommendation-vid-info {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    height: 18px;
+}
+
+.recommendation-info .recommendation-vid-info .views {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+    color: @grey-text;
+}
+
+.recommendation-info .recommendation-vid-info .dot {
+    font-size: 12px;
+    margin: auto 4px;
+}
+
+.recommendation-info .recommendation-vid-info .upload-date {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+    color: @grey-text;
+}
+
+// ===== RECOMMENDATION INFO MENU =====
+.recommendation-menu {
+    opacity: 0;
+}
+
+.recommendation-menu img{
+    opacity: 0.4;
+}
+
+.recommendation-menu img:hover {
+    opacity: 0.6;
 }
