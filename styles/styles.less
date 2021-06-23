@@ -783,17 +783,27 @@ button {
     width: 402px;
     min-width: 300px;
     padding: 24px 24px 0 0;
-    background-color: cyan;
+    // background-color: cyan;
     flex-shrink: 0;
     overflow: auto;
     display: flex;
     flex-direction: column;
 }
 
+// .tags {
+//     display: inline-block;
+//     padding-right: auto;
+//     // flex-direction: row;
+//     // align-items: flex-start;
+//     // height: 51px;
+// }
+
+
 .tags {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: flex-start;
+    height: 51px;
 }
 
 .tag {
@@ -805,7 +815,7 @@ button {
     padding: 0 12px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 16px;
-    margin: 8px 8px 8px 0;
+    margin: 0 8px 8px 0;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.05);
     color: rgb(3, 3, 3);
@@ -826,4 +836,18 @@ button {
     letter-spacing: 0.2px;
     line-height: 20px;
     max-width: 200px;
+}
+
+.tag-arrow {
+    box-sizing: content-box;
+    height: 16px;
+    width: 16px;
+    padding: 8px;
+    margin-bottom: auto;
+
+}
+
+.tag-arrow img{
+    height: 16px;
+    width: 16px;
 }
