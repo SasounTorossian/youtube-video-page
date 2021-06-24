@@ -643,6 +643,10 @@ button {
     background: transparent;
 }
 
+.comment:hover .commenter-option {
+    opacity: 1;
+}
+
 .comment .commenter-icon {
     margin-right: 16px;
     cursor: pointer;
@@ -657,6 +661,8 @@ button {
 .comment .commenter-content {
     display: flex;
     flex-direction: column;
+    max-width: 1184px;
+    flex-grow: 1;
 }
 
 .comment .commenter-content .commenter-header {
@@ -798,6 +804,29 @@ button {
     letter-spacing: 0.5px;
     line-height: 20px;
     color: #065fd4;
+}
+
+.comment .commenter-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: transparent;
+    opacity: 0;
+}
+
+.comment .commenter-option img{
+    flex-grow: 1;
+    height: 24px;
+    width: 24px;
+    opacity: 0.4;
+}
+
+.comment .commenter-option img:hover {
+    opacity: 0.6;
 }
 
 
