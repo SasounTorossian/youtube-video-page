@@ -984,7 +984,15 @@ button {
 .recommendation-info {
 }
 
-.line-clamp {
+.line-clamp-1{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  }
+
+
+.line-clamp-2{
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;  
@@ -1010,6 +1018,7 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-right: auto;
 }
 
 .recommendation-info .recommendation-channel-ver p {
@@ -1017,7 +1026,8 @@ button {
     font-weight: 400;
     letter-spacing: 0.3px;
     line-height: 18px;
-    color: @grey-text
+    color: @grey-text;
+    max-width: 150px;
 }
 
 .recommendation-info .recommendation-channel-ver img {
