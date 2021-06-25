@@ -412,7 +412,6 @@ button {
     justify-content: center;
     height: 36px;
     border: none;
-    text-transform: uppercase;
     padding-right: 6px;
     background: none;
 }
@@ -458,17 +457,55 @@ button {
 }
 
 .video-data-bottom .upvote {
+    position: relative;
     box-sizing: content-box;
     height: 42px;
     border-bottom: 2px solid #909090;
     margin-bottom: -7px;
 }
 
+.video-data-bottom .upvote .tooltip {
+    top: 48px;
+    right: auto;
+    bottom: auto;
+    left: 0px;
+}
+
 .video-data-bottom .downvote {
+    position: relative;
     height: 42px;
     border-bottom: 2px solid #909090;
     margin-bottom: -7px;
     padding-left: 8px;
+}
+
+.video-data-bottom .downvote .tooltip {
+    top: 48px;
+    right: auto;
+    bottom: auto;
+    left: 0px;
+}
+
+.video-data-bottom .share {
+    position: relative;
+}
+
+.video-data-bottom .share .tooltip {
+    top: 48px;
+    right: auto;
+    bottom: auto;
+    left: 0px;
+}
+
+.video-data-bottom .save {
+    position: relative;
+}
+
+.video-data-bottom .save .tooltip {
+    top: 48px;
+    right: auto;
+    bottom: auto;
+    left: 0px;
 }
 
 // ===== CHANNEL INFO =====
