@@ -312,17 +312,19 @@ button {
     margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    min-width: calc(480px * (16/9) + (3 * 24px) + 300px);
     max-width: calc(1280px + 402px + (3 * 24px));
 }
+
+@media screen and (max-width: 1140px) {
+    .main {
+        flex-direction: column;
+    }
+  }
 
 // ===== PRIMARY =====
 .primary {
     box-sizing: content-box;
     height: 100%;
-    width: 100%;
-    min-width: calc(480px * (16/9));
     max-width: calc((100vh - (56px + 24px + 136px)) * (16/9));
     padding: 24px 24px 0 0;
     margin: 0 0 0 24px;
@@ -350,7 +352,7 @@ button {
 .video-data {
     box-sizing: content-box;
     background-color: transparent;
-    min-width: calc(480px * (16/9));
+    // min-width: calc(480px * (16/9));
     max-width: calc((100vh - (56px + 24px + 136px)) * (16/9));
     height: 66px;
     flex-grow: 1;
@@ -986,7 +988,7 @@ button {
 
 // ===== SECONDARY =====
 .secondary {
-    box-sizing: content-box;
+    // box-sizing: content-box;
     height: 100%;
     width: 402px;
     min-width: 300px;
@@ -997,8 +999,14 @@ button {
     flex-direction: column;
 }
 
-// ===== TAGS =====
+@media screen and (max-width: 1140px) {
+    .secondary {
+        width: unset;
+        margin: 0 0 0 24px;
+    }
+  }
 
+// ===== TAGS =====
 .tags {
     display: flex;
     flex-direction: row;
@@ -1071,6 +1079,16 @@ button {
     margin-top: 8px;
     background-color: transparent;
 }
+
+@media screen and (max-width: 1140px) {
+    .recommendation-container {
+        width: 100%;
+    }
+
+    .recommendation-container a {
+        flex-grow: 1;
+    }
+  }
 
 .recommendation-container:hover .static {
     opacity: 0;
@@ -1177,6 +1195,7 @@ button {
 
 // ===== RECOMMENDATION INFO =====
 .recommendation-info {
+    // width: 100%;
 }
 
 .line-clamp-1{
